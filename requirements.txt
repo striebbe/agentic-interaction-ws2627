@@ -1,0 +1,2 @@
+environs>=15.2.0
+openai>=3.42.0

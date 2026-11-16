@@ -19,7 +19,9 @@ class Config:
     OPENAI_API_KEY: str = env.str("OPENAI_API_KEY")
     DATA_BASE_URL: str = env.str("DATA_BASE_URL")
 
-    MAX_STEPS: int = 5
+    MAX_STEPS: int = 8
+    TIMEOUT: int = 15
+    MAX_RETRIES: int = 5
 
     TOOLS: ClassVar[list[ChatCompletionToolParam]] = [
         {
